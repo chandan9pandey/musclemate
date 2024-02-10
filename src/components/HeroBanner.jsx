@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 
 import HeroBannerImage from "../assets/images/banner.png";
-
+import logo from "../assets/images/Logo-1.png";
 const HeroBanner = () => {
 	return (
 		<Box
@@ -10,9 +10,10 @@ const HeroBanner = () => {
 			position="relative"
 			p="20px"
 		>
-			<Typography color="#FF2625" fontWeight="600" fontSize="26px">
+			{/* <Typography color="#FF2625" fontWeight="600" fontSize="26px">
 				Muscle Mate
-			</Typography>
+			</Typography> */}
+			<img src={logo} alt="logo-text" style={{ width: "300px" }} />
 			<Typography
 				fontWeight={700}
 				sx={{ fontSize: { lg: "44px", xs: "40px" } }}
