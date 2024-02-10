@@ -23,7 +23,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 	const handleSearch = async () => {
 		if (search) {
 			const exercisesData = await fetchData(
-				"https://exercisedb.p.rapidapi.com/exercises",
+				"https://exercisedb.p.rapidapi.com/exercises?offset=0&limit=20",
 				exerciseOptions
 			);
 
@@ -88,7 +88,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 			<Box sx={{ position: "relative", width: "100%", p: "20px" }}>
 				<HorizontalScrollbar
 					data={bodyParts}
-					setBodyPart={setBodyParts}
+					setBodyPart={setBodyPart}
 					bodyPart={bodyPart}
 				/>
 			</Box>
